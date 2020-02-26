@@ -8,6 +8,7 @@ export default class NoteList extends React.Component{
     static contextType = ApiContext;
     render () {  
         const { folders, notes} = this.context  
+        console.log('props', this.props)
         return (
             <div className="leftNav">
                 <ul>
@@ -17,6 +18,8 @@ export default class NoteList extends React.Component{
                             to={`/folder/${folder.id}`}>
                                 {folder.name}
                                 <span> ({countNotesForFolder(notes, folder.id.toString())})
+                                {console.log('foldid', countNotesForFolder(notes, folder.id.toString()))}
+                                {console.log('foldid', folder.id)}
                                 </span>
                         </NavLink>
                        </li> 
