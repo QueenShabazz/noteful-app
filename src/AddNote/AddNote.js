@@ -48,14 +48,12 @@ export default class AddNote extends React.Component{
                     </label>
                     {this.props.folderError}
                     <select id='note-folder-select' value={this.props.folder} onChange={this.props.onfolderChange}>
-                        {/* <option value={null}>...</option> */}
-                    {
-                    folders.map(
-                        folder =>  
+                        <option value={null}>...</option>
+                        {folders.map(folder => 
                         <option key={folder.id} value={folder.id}>
-                            {folder.name}
-                        </option>)
-                    }
+                        {folder.name}
+                        </option>
+                        )}
                     </select>
                 </div>
                 <button type='submit'>
