@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form component renders the Form default 1`] = `
+<section>
+  <div
+    className="note-main"
+  >
+    <ul
+      className="note"
+    >
+      <li>
+        <button
+          type="button"
+        >
+          <Link
+            to="/add-note"
+          >
+            Add Note
+          </Link>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+`;
