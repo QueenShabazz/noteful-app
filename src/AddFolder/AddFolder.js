@@ -11,6 +11,7 @@ export default class AddFolder extends Component {
           onSubmit={e => {
             this.props.folderSubmit(e);
             if (this.props.folder) {
+              this.props.history.push('/')
               window.location.reload()
             }
           }}
